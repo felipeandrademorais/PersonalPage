@@ -1,9 +1,0 @@
-
----Downloaded files---
-The import files for: Demo One were successfully downloaded!
-Initial max execution time = 120
-Files info:
-Site URL = http://blog.felipemorais.info
-Data file = /home/u932578620/domains/felipemorais.info/public_html/blog/wp-content/uploads/2021/03/demo-content-import-file_2021-03-26__16-57-50.xml
-Widget file = /home/u932578620/domains/felipemorais.info/public_html/blog/wp-content/uploads/2021/03/demo-widgets-import-file_2021-03-26__16-57-50.json
-Customizer file = /home/u932578620/domains/felipemorais.info/public_html/blog/wp-content/uploads/2021/03/demo-customizer-import-file_2021-03-26__16-57-50.dat
