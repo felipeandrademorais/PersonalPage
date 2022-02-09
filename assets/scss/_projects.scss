@@ -1,0 +1,96 @@
+#s-projects {
+  @include spacing-section;
+
+  background-color: $bg-secondary;
+  .grid-layout {
+    h2 {
+      text-align: center;
+      @include title-section();
+      span {
+        color: $color-main;
+        font-size: 3rem;
+      }
+    }
+    #projects {
+      display: flex;
+      height: auto;
+      flex-wrap: wrap;
+      margin: 25px 0px;
+      article {
+        max-width: 252px;
+        height: 367px;
+        border-radius: 5px;
+        margin: 10px;
+        flex-basis: calc(25% - 20px);
+        flex-grow: 1;
+        border: 1px solid $bg-secondary;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        &:hover {
+          border-image: linear-gradient(
+              225deg,
+              rgba(102, 16, 242, 1) 0%,
+              $bg-secondary 100%
+          )1;
+          .desc {
+            background-color: rgba(14, 9, 27, 0.8);
+            h3 {
+              opacity: 1;
+              transform: none;
+            }
+            p {
+              opacity: 1;
+              transform: none;
+            }
+          }
+        }
+        a {
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(to top, rgba(14, 9, 27, 0.8) 5%, transparent 30%);
+        }
+        @include responsive-desktop {
+          flex-basis: calc(50% - 20px);
+        }
+        @include responsive-mobile {
+          flex-basis: calc(100% - 20px);
+        }
+        .desc {
+          width: 100%;
+          height: 100%;
+          padding: 40px 30px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          transition: all 0.3s, transform 0.3s;
+          h3 {
+            padding: 20px 0px;
+            color: $color-white;
+            opacity: 0;
+            transition: all 0.3s;
+            transform: translate3d(0, -15px, 0);
+            font: {
+              size: 2rem;
+              weight: bold;
+            }
+          }
+          p {
+            width: 100%;
+            opacity: 0;
+            line-height: 28px;
+            color: $color-gray;
+            word-wrap: break-word; 
+            transition: all 0.3s;
+            transform: translate3d(0, 40px, 0);
+            font: {
+              family: $font-secondary;
+              size: 1.6rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
