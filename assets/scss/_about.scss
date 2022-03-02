@@ -1,0 +1,36 @@
+#s-about {
+  @include spacing-section;
+  background-color: $bg-secondary;
+  #about {
+    @include flexbox;
+  }
+  #about-text {
+    width: 50%;
+    @include responsive-desktop {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding-left: 0px;
+    }
+    h2 {
+      @include title-section();
+      span {
+        color: $color-main;
+        font-size: 3rem;
+      }
+    }
+    p {
+      line-height: 3.2rem;
+      color: $color-gray;
+      font: {
+        family: $font-secondary;
+        size: 1.8rem;
+      }
+    }
+  }
+  #about-img {
+    .about-blob-img {
+      width: 170px;
+    }
+  }
+}

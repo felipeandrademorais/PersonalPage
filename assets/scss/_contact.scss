@@ -1,0 +1,94 @@
+#s-contact {
+    @include spacing-section;
+    background-color: $bg-secondary;
+    #contact {
+        @include flexbox;
+        flex-direction: column;
+        gap: 50px;
+    }
+    #contact-title {
+        height: auto;
+        h2 {
+          margin-bottom: 30px;
+          color: $color-white;
+          font: {
+            size: 3.2rem;
+          }
+        }
+        p {
+          max-width: 500px;
+          line-height: 32px;
+          color: $color-gray;
+          font: {
+            family: $font-secondary;
+            size: 1.8rem;
+          }
+        }
+      }
+    #contact-form {
+        @include flexbox;
+        width: 100%;
+        justify-content: space-around;
+        #contact-img {
+            position: relative;
+            img {
+                border-radius: 5px;
+            }
+            #widgets {
+                position: absolute;
+                bottom: 10px;
+                right: 40%;
+            }
+        }
+        .wpforms-container {
+            width: 40%;
+            margin: 0;
+            .wpforms-form {
+                width: 100%;
+                .wpforms-field-label {
+                    color: $color-gray;
+                    font-family: $font-secondary;
+                    font-weight: 300;
+                    font-size: 1.8rem;
+                }
+                .wpforms-field-medium {
+                    background-color: $color-white;
+                    color: $bg-main;
+                }
+                input {
+                    max-width: 100%;
+                }
+                input:hover, textarea:hover, 
+                input:focus, textarea:focus{
+                    border-radius: 5px;
+                    border: 1px solid $bg-secondary;
+                    border-image: linear-gradient(
+                        225deg,
+                        rgba(102, 16, 242, 1) 0%,
+                        $bg-secondary 100%
+                      )
+                      1;
+                  }
+                .wpforms-submit-container {
+                    display: flex;
+                    justify-content: center;
+                    button {
+                        width: 100%;
+                        border-radius: 5px;
+                        font-family: $font-main;
+                        font-size: 1.8rem;
+                        background-color: $bg-secondary;
+                        color: $color-gray;
+                        transition: all 0.3s ease;
+                        border: 1px solid $color-main-hover;
+                    }
+                    button:hover {
+                        background-color:$color-main-hover;
+                        color: $color-white;
+                        border: 1px solid $bg-secondary;
+                    }
+                }
+            }
+        }
+    }
+}
