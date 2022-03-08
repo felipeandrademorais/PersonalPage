@@ -18,8 +18,8 @@
 }
 
 ::selection {
-  background-color: #6610f2;
-  color: #fafafa;
+  background-color: #67159C;
+  color: #FAFFFD;
 }
 
 ul,
@@ -62,7 +62,7 @@ input:focus {
 
 body {
   font-family: "Cera Pro Medium";
-  background-color: #fafafa;
+  background-color: #FAFFFD;
 }
 
 html {
@@ -75,11 +75,11 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #0e091b;
+  background-color: #19181F;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #6610f2;
+  background-color: #67159C;
   border-radius: 6px;
 }
 
@@ -117,7 +117,7 @@ header .grid-layout nav .nav-list li {
   margin-left: 50px;
 }
 header .grid-layout nav .nav-list li a {
-  color: #bebebe;
+  color: #FAFFFD;
   font-size: 2rem;
   position: relative;
   font-family: "Cera Pro Medium";
@@ -130,7 +130,7 @@ header .grid-layout nav .nav-list li a::after {
   height: 1px;
   bottom: -7px;
   left: 0;
-  background: linear-gradient(270deg, #6610f2 0%, #17161d 100%);
+  background: linear-gradient(270deg, #67159C 0%, #17161d 100%);
   transform-origin: bottom right;
   transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
 }
@@ -139,7 +139,7 @@ header .grid-layout nav .nav-list li a:hover::after {
   transform-origin: bottom left;
 }
 header .grid-layout nav .nav-list li a:hover {
-  color: #fafafa;
+  color: #FAFFFD;
 }
 
 .mobile-menu {
@@ -148,7 +148,7 @@ header .grid-layout nav .nav-list li a:hover {
 .mobile-menu div {
   width: 32px;
   height: 1px;
-  background-color: #fafafa;
+  background-color: #FAFFFD;
   margin: 8px;
   transition: 0.4s;
 }
@@ -193,7 +193,7 @@ header .grid-layout nav .nav-list li a:hover {
     width: 100vw;
     height: 100vh;
     z-index: 999;
-    background-color: #110e1b;
+    background-color: #1E1E26;
     flex-direction: column;
     padding-top: 100px;
     visibility: hidden;
@@ -213,7 +213,7 @@ header .grid-layout nav .nav-list li a:hover {
 }
 #s-home {
   padding: 0px 50px;
-  background-color: #0e091b;
+  background-color: #19181F;
   position: relative;
 }
 @media screen and (max-width: 992px) {
@@ -243,7 +243,7 @@ header .grid-layout nav .nav-list li a:hover {
   }
 }
 #s-home .grid-layout #home #home-container-text h2 {
-  color: #fafafa;
+  color: #FAFFFD;
   font-size: 2.5rem;
   font-weight: 500;
   font-family: "Cera Pro Regular";
@@ -313,7 +313,7 @@ header .grid-layout nav .nav-list li a:hover {
 
 #s-about {
   padding: 100px 50px;
-  background-color: #110e1b;
+  background-color: #1E1E26;
 }
 @media screen and (max-width: 992px) {
   #s-about {
@@ -339,17 +339,17 @@ header .grid-layout nav .nav-list li a:hover {
 }
 #s-about #about-text h2 {
   padding-bottom: 20px;
-  color: #fafafa;
+  color: #FAFFFD;
   font-size: 4rem;
   font-weight: 500;
 }
 #s-about #about-text h2 span {
-  color: #6610f2;
+  color: #67159C;
   font-size: 3rem;
 }
 #s-about #about-text p {
   line-height: 3.2rem;
-  color: #bebebe;
+  color: #FAFFFD;
   font-family: "Cera Pro Regular";
   font-size: 1.8rem;
 }
@@ -359,7 +359,7 @@ header .grid-layout nav .nav-list li a:hover {
 
 #s-projects {
   padding: 100px 50px;
-  background-color: #110e1b;
+  background-color: #1E1E26;
 }
 @media screen and (max-width: 992px) {
   #s-projects {
@@ -369,12 +369,12 @@ header .grid-layout nav .nav-list li a:hover {
 #s-projects .grid-layout h2 {
   text-align: center;
   padding-bottom: 20px;
-  color: #fafafa;
+  color: #FAFFFD;
   font-size: 4rem;
   font-weight: 500;
 }
 #s-projects .grid-layout h2 span {
-  color: #6610f2;
+  color: #67159C;
   font-size: 3rem;
 }
 #s-projects .grid-layout #projects {
@@ -390,13 +390,13 @@ header .grid-layout nav .nav-list li a:hover {
   margin: 10px;
   flex-basis: calc(25% - 20px);
   flex-grow: 1;
-  border: 1px solid #110e1b;
+  border: 1px solid #1E1E26;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 #s-projects .grid-layout #projects article:hover {
-  border-image: linear-gradient(225deg, #6610f2 0%, #110e1b 100%) 1;
+  border-image: linear-gradient(225deg, #6610f2 0%, #1E1E26 100%) 1;
 }
 #s-projects .grid-layout #projects article:hover .desc {
   background-color: rgba(14, 9, 27, 0.8);
@@ -436,7 +436,7 @@ header .grid-layout nav .nav-list li a:hover {
 }
 #s-projects .grid-layout #projects article .desc h3 {
   padding: 20px 0px;
-  color: #fafafa;
+  color: #FAFFFD;
   opacity: 0;
   transition: all 0.3s;
   transform: translate3d(0, -15px, 0);
@@ -447,7 +447,7 @@ header .grid-layout nav .nav-list li a:hover {
   width: 100%;
   opacity: 0;
   line-height: 28px;
-  color: #bebebe;
+  color: #FAFFFD;
   word-wrap: break-word;
   transition: all 0.3s;
   transform: translate3d(0, 40px, 0);
@@ -457,7 +457,7 @@ header .grid-layout nav .nav-list li a:hover {
 
 #s-skills {
   padding: 100px 50px;
-  background-color: #0e091b;
+  background-color: #19181F;
 }
 @media screen and (max-width: 992px) {
   #s-skills {
@@ -490,13 +490,13 @@ header .grid-layout nav .nav-list li a:hover {
 }
 #s-skills .grid-layout #skills #skills-title h2 {
   margin-bottom: 30px;
-  color: #fafafa;
+  color: #FAFFFD;
   font-size: 3.2rem;
 }
 #s-skills .grid-layout #skills #skills-title p {
   max-width: 500px;
   line-height: 32px;
-  color: #bebebe;
+  color: #FAFFFD;
   font-family: "Cera Pro Regular";
   font-size: 1.8rem;
 }
@@ -521,15 +521,15 @@ header .grid-layout nav .nav-list li a:hover {
   flex-wrap: wrap;
   justify-content: center;
   flex-grow: 1;
-  background-color: #110e1b;
+  background-color: #1E1E26;
   border-radius: 5px;
   position: relative;
-  border: 1px solid #110e1b;
+  border: 1px solid #1E1E26;
   cursor: pointer;
 }
 #s-skills .grid-layout #skills .skills-container #skills-cards article:hover {
-  border: 1px solid #110e1b;
-  border-image: linear-gradient(225deg, #6610f2 0%, #110e1b 100%) 1;
+  border: 1px solid #1E1E26;
+  border-image: linear-gradient(225deg, #6610f2 0%, #1E1E26 100%) 1;
 }
 #s-skills .grid-layout #skills .skills-container #skills-cards article:hover .skills-cards-name, #s-skills .grid-layout #skills .skills-container #skills-cards article:hover .skills-cards-name-low, #s-skills .grid-layout #skills .skills-container #skills-cards article:hover .skills-cards-name-high {
   display: block;
@@ -547,10 +547,10 @@ header .grid-layout nav .nav-list li a:hover {
   position: absolute;
   padding: 5px;
   transform: translate(-50%, 0%);
-  background-color: #110e1b;
+  background-color: #1E1E26;
   width: 125px;
   border-radius: 4px;
-  color: #fafafa;
+  color: #FAFFFD;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -568,7 +568,7 @@ header .grid-layout nav .nav-list li a:hover {
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-top: 20px solid #110e1b;
+  border-top: 20px solid #1E1E26;
   bottom: -8px;
   z-index: -1;
   left: 35%;
@@ -584,7 +584,7 @@ header .grid-layout nav .nav-list li a:hover {
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-bottom: 20px solid #110e1b;
+  border-bottom: 20px solid #1E1E26;
   top: -8px;
   z-index: -1;
   left: 35%;
@@ -597,7 +597,7 @@ header .grid-layout nav .nav-list li a:hover {
 
 #s-contact {
   padding: 100px 50px;
-  background-color: #110e1b;
+  background-color: #1E1E26;
 }
 @media screen and (max-width: 992px) {
   #s-contact {
@@ -617,13 +617,13 @@ header .grid-layout nav .nav-list li a:hover {
 }
 #s-contact #contact-title h2 {
   margin-bottom: 30px;
-  color: #fafafa;
+  color: #FAFFFD;
   font-size: 3.2rem;
 }
 #s-contact #contact-title p {
   max-width: 500px;
   line-height: 32px;
-  color: #bebebe;
+  color: #FAFFFD;
   font-family: "Cera Pro Regular";
   font-size: 1.8rem;
 }
@@ -654,14 +654,14 @@ header .grid-layout nav .nav-list li a:hover {
   width: 100%;
 }
 #s-contact #contact-form .wpforms-container .wpforms-form .wpforms-field-label {
-  color: #bebebe;
+  color: #FAFFFD;
   font-family: "Cera Pro Regular";
   font-weight: 300;
   font-size: 1.8rem;
 }
 #s-contact #contact-form .wpforms-container .wpforms-form .wpforms-field-medium {
-  background-color: #fafafa;
-  color: #0e091b;
+  background-color: #FAFFFD;
+  color: #19181F;
 }
 #s-contact #contact-form .wpforms-container .wpforms-form input {
   max-width: 100%;
@@ -669,8 +669,8 @@ header .grid-layout nav .nav-list li a:hover {
 #s-contact #contact-form .wpforms-container .wpforms-form input:hover, #s-contact #contact-form .wpforms-container .wpforms-form textarea:hover,
 #s-contact #contact-form .wpforms-container .wpforms-form input:focus, #s-contact #contact-form .wpforms-container .wpforms-form textarea:focus {
   border-radius: 5px;
-  border: 1px solid #110e1b;
-  border-image: linear-gradient(225deg, #6610f2 0%, #110e1b 100%) 1;
+  border: 1px solid #1E1E26;
+  border-image: linear-gradient(225deg, #6610f2 0%, #1E1E26 100%) 1;
 }
 #s-contact #contact-form .wpforms-container .wpforms-form .wpforms-submit-container {
   display: flex;
@@ -681,21 +681,21 @@ header .grid-layout nav .nav-list li a:hover {
   border-radius: 5px;
   font-family: "Cera Pro Medium";
   font-size: 1.8rem;
-  background-color: #110e1b;
-  color: #bebebe;
+  background-color: #1E1E26;
+  color: #FAFFFD;
   transition: all 0.3s ease;
-  border: 1px solid #5429cf;
+  border: 1px solid #67159C;
 }
 #s-contact #contact-form .wpforms-container .wpforms-form .wpforms-submit-container button:hover {
-  background-color: #5429cf;
-  color: #fafafa;
-  border: 1px solid #110e1b;
+  background-color: #67159C;
+  color: #FAFFFD;
+  border: 1px solid #1E1E26;
 }
 
 footer {
-  background-color: #110e1b;
+  background-color: #1E1E26;
   text-align: center;
-  color: #fafafa;
+  color: #FAFFFD;
 }
 footer .grid-layout {
   border-top: 1px solid rgba(114, 114, 126, 0.2);
@@ -747,7 +747,7 @@ footer .grid-layout div img {
   margin-left: 5px;
   opacity: 1;
   animation: blink 1s infinite;
-  color: #6610f2;
+  color: #67159C;
 }
 
 @keyframes blink {

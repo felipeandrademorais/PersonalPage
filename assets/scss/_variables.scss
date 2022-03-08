@@ -17,13 +17,13 @@
 $font-main: "Cera Pro Medium";
 $font-secondary: "Cera Pro Regular";
 
-$color-main: #6610f2;
-$color-main-hover: #5429cf;
+$color-main: #67159C;
+$color-main-hover: #67159C;
 
-$color-white: #fafafa;
-$color-gray: #bebebe;
-$bg-main: #0e091b;
-$bg-secondary: #110e1b;
+$color-white: #FAFFFD;
+$color-gray: #FAFFFD;
+$bg-main: #19181F;
+$bg-secondary: #1E1E26;
 
 @mixin responsive-desktop {
   @media screen and (max-width: 1200px) {
@@ -72,8 +72,8 @@ $bg-secondary: #110e1b;
 @mixin button {
   background: linear-gradient(
     225deg,
-    rgba(102, 16, 242, 0.3) 0%,
-    rgba(102, 16, 242, 0) 100%
+    $color-main 0%,
+    $bg-main 100%
   );
   color: $color-white;
   backdrop-filter: blur(10px);
@@ -83,7 +83,7 @@ $bg-secondary: #110e1b;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
-  border: 1px solid rgba(102, 16, 242, 0.5);
+  border: 1px solid $color-main-hover;
   transition: all 0.7s ease;
   margin-top: 30px;
   font: {
@@ -96,8 +96,8 @@ $bg-secondary: #110e1b;
     max-width: 280px;
     background: linear-gradient(
       225deg,
-      rgba(102, 16, 242, 0.6) 0%,
-      rgba(102, 16, 242, 0) 100%
+      $color-main-hover 0%,
+      $bg-main 100%
     );
   }
 }
