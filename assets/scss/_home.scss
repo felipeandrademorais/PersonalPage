@@ -22,6 +22,26 @@
           width: 100%;
           text-align: center;
           padding: 0px;
+          h2 {
+            font-size: 4.5rem !important;
+          }
+          #home-name {
+            font-size: 9.6rem !important;
+          }
+          .home-widgets {
+            .wp-social-link, .wp-block-social-link-anchor{
+              width: 100px;
+              height: 100px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              svg {
+                width: 80%;
+                height: 80%;
+              }
+              
+            }
+          }
         }
         h2 {
           color: $color-white;
@@ -49,52 +69,6 @@
         position: relative;
         @include responsive-tablet {
           display: none;
-        }
-        #logo-lab {
-          width: 100%;
-          position: absolute;
-          top: 40%;
-          left: 50%;
-          transform: translate(-50%, -40%);
-          @include responsive-tablet {
-            display: none;
-          }
-          @keyframes light {
-            0%,
-            55% {
-              opacity: 0;
-            }
-            60%,
-            100% {
-              opacity: 1;
-            }
-          }
-          #luz_2 {
-            opacity: 1;
-            animation: lightDelay 8s ease infinite alternate;
-          }
-          @keyframes lightDelay {
-            0%,
-            60% {
-              opacity: 0;
-            }
-            65%,
-            100% {
-              opacity: 1;
-            }
-          }
-        }
-        .object {
-          animation: MoveUpDown 4s linear infinite;
-        }
-        @keyframes MoveUpDown {
-          0%,
-          100% {
-            top: 34vh;
-          }
-          50% {
-            top: 38vh;
-          }
         }
       }
     }

@@ -67,7 +67,6 @@ body {
 
 html {
   scroll-behavior: smooth;
-  font-size: 62.5%;
 }
 
 ::-webkit-scrollbar {
@@ -84,132 +83,9 @@ html {
 }
 
 header {
-  background: rgba 14, 9, 27, 0.6;
-  backdrop-filter: blur(25px);
-  -webkit-backdrop-filter: blur(25px);
-  border-bottom: 1px solid rgba(114, 114, 126, 0.2);
+  background-color: #0e091b;
+  width: 100%;
   z-index: 999;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-header .grid-layout nav {
-  padding: 0px 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 8vh;
-}
-@media screen and (max-width: 992px) {
-  header .grid-layout nav {
-    padding: 0px 25px;
-  }
-}
-header .grid-layout nav img {
-  width: 150px;
-}
-header .grid-layout nav .nav-list {
-  list-style: none;
-  display: flex;
-}
-header .grid-layout nav .nav-list li {
-  margin-left: 50px;
-}
-header .grid-layout nav .nav-list li a {
-  color: #bebebe;
-  font-size: 2rem;
-  position: relative;
-  font-family: "Cera Pro Medium";
-}
-header .grid-layout nav .nav-list li a::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 1px;
-  bottom: -7px;
-  left: 0;
-  background: linear-gradient(270deg, #6610f2 0%, #17161d 100%);
-  transform-origin: bottom right;
-  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
-}
-header .grid-layout nav .nav-list li a:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-header .grid-layout nav .nav-list li a:hover {
-  color: #fafafa;
-}
-
-.mobile-menu {
-  display: none;
-}
-.mobile-menu div {
-  width: 32px;
-  height: 1px;
-  background-color: #fafafa;
-  margin: 8px;
-  transition: 0.4s;
-}
-
-.nav-list.active {
-  visibility: initial;
-  transition: 1s all ease;
-}
-
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(100px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-.mobile-menu.active .line1 {
-  transform: rotate(-45deg) translate(-8px, 8px);
-}
-
-.mobile-menu.active .line2 {
-  opacity: 0;
-}
-
-.mobile-menu.active .line3 {
-  transform: rotate(45deg) translate(-5px, -5px);
-}
-
-@media screen and (max-width: 992px) {
-  body {
-    overflow-x: hidden;
-  }
-
-  .nav-list {
-    text-align: center;
-    position: absolute;
-    top: 8vh;
-    right: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 999;
-    background-color: #110e1b;
-    flex-direction: column;
-    padding-top: 100px;
-    visibility: hidden;
-  }
-
-  header .grid-layout nav .nav-list li {
-    opacity: 0;
-    margin: 0px 0px 50px 0px;
-  }
-  header .grid-layout nav .nav-list li a {
-    font-size: 2.4rem;
-  }
-
-  .mobile-menu {
-    display: block;
-  }
 }
 #s-home {
   padding: 0px 50px;
@@ -241,6 +117,23 @@ header .grid-layout nav .nav-list li a:hover {
     text-align: center;
     padding: 0px;
   }
+  #s-home .grid-layout #home #home-container-text h2 {
+    font-size: 4.5rem !important;
+  }
+  #s-home .grid-layout #home #home-container-text #home-name {
+    font-size: 9.6rem !important;
+  }
+  #s-home .grid-layout #home #home-container-text .home-widgets .wp-social-link, #s-home .grid-layout #home #home-container-text .home-widgets .wp-block-social-link-anchor {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #s-home .grid-layout #home #home-container-text .home-widgets .wp-social-link svg, #s-home .grid-layout #home #home-container-text .home-widgets .wp-block-social-link-anchor svg {
+    width: 80%;
+    height: 80%;
+  }
 }
 #s-home .grid-layout #home #home-container-text h2 {
   color: #fafafa;
@@ -265,49 +158,6 @@ header .grid-layout nav .nav-list li a:hover {
 @media screen and (max-width: 992px) {
   #s-home .grid-layout #home #home-container-img {
     display: none;
-  }
-}
-#s-home .grid-layout #home #home-container-img #logo-lab {
-  width: 100%;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -40%);
-}
-@media screen and (max-width: 992px) {
-  #s-home .grid-layout #home #home-container-img #logo-lab {
-    display: none;
-  }
-}
-@keyframes light {
-  0%, 55% {
-    opacity: 0;
-  }
-  60%, 100% {
-    opacity: 1;
-  }
-}
-#s-home .grid-layout #home #home-container-img #logo-lab #luz_2 {
-  opacity: 1;
-  animation: lightDelay 8s ease infinite alternate;
-}
-@keyframes lightDelay {
-  0%, 60% {
-    opacity: 0;
-  }
-  65%, 100% {
-    opacity: 1;
-  }
-}
-#s-home .grid-layout #home #home-container-img .object {
-  animation: MoveUpDown 4s linear infinite;
-}
-@keyframes MoveUpDown {
-  0%, 100% {
-    top: 34vh;
-  }
-  50% {
-    top: 38vh;
   }
 }
 
@@ -353,6 +203,11 @@ header .grid-layout nav .nav-list li a:hover {
   font-family: "Cera Pro Regular";
   font-size: 1.8rem;
 }
+@media screen and (max-width: 992px) {
+  #s-about #about-text p {
+    font-size: 1.3rem !important;
+  }
+}
 #s-about #about-img .about-blob-img {
   width: 170px;
 }
@@ -382,6 +237,7 @@ header .grid-layout nav .nav-list li a:hover {
   height: auto;
   flex-wrap: wrap;
   margin: 25px 0px;
+  justify-content: center;
 }
 #s-projects .grid-layout #projects article {
   max-width: 252px;

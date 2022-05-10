@@ -1,11 +1,13 @@
 <header>
-  <div class="grid-layout">
+  <div class="header-top">
+    <?php
+      if ( function_exists( 'the_custom_logo' ) ) {
+        the_custom_logo();
+      }
+    ?>
+  </div>
+  <div class="header-bottom">
     <nav>
-      <?php
-        if ( function_exists( 'the_custom_logo' ) ) {
-          the_custom_logo();
-        }
-      ?>
       <div class="mobile-menu">
         <div class="line1"></div>
         <div class="line2"></div>
